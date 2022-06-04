@@ -13,3 +13,19 @@
 # abc 2
 # bcd 1
 # aa 2
+
+
+st = input().lower().split()
+# 1
+d = {a: st.count(a) for a in set(st)}
+for k, v in d.items():
+    print(k, v)
+
+# 2
+# d = dict()
+# for w in st:
+#    if w not in d:
+#        d[w] = d.get(w, 0)
+#    d[w] += 1
+#for key in d.keys():
+#    print(key, d[key])
