@@ -27,5 +27,5 @@ for k, v in d.items():
 #    if w not in d:
 #        d[w] = d.get(w, 0)
 #    d[w] += 1
-#for key in d.keys():
+# for key in d.keys():
 #    print(key, d[key])
