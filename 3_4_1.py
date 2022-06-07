@@ -17,7 +17,7 @@ import re                                           # импорт модуля 
 numbs, chairs = [], []
 stroka = ''
 
-with open('3_3_1_input.txt', 'r') as inputData:     # открываем файл
+with open('3_4_1_input.txt', 'r') as inputData:     # открываем файл
     str = inputData.readline().strip()              # считываем строку данных из файла в переменную
     print(str)                                      # выводиим на экран, контроль считывания.
     # Файл закрыт
@@ -28,6 +28,6 @@ with open('3_3_1_input.txt', 'r') as inputData:     # открываем фай�
         stroka += chairs[i] * int(numbs[i])
     print(stroka)
 
-with open('3_3_1_output.txt', 'w') as outputData:   # открываем файл на запись
+with open('3_4_1_output.txt', 'w') as outputData:   # открываем файл на запись
     outputData.write(stroka)                        # записываем результат в файл
     # файл закрыт
