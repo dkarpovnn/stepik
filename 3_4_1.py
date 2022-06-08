@@ -15,7 +15,7 @@
 
 import re                                           # импорт модуля для работы с регулярными выражениями
 numbs, chairs = [], []
-stroka = ''
+result_str = ''
 
 with open('3_4_1_input.txt', 'r') as inputData:     # открываем файл
     str = inputData.readline().strip()              # считываем строку данных из файла в переменную
@@ -25,9 +25,9 @@ with open('3_4_1_input.txt', 'r') as inputData:     # открываем фай�
     numbs = re.findall(r'\d+', str)                 # выбираем все числовые значения из строки
     chairs = re.findall(r'\D', str)                 # выбираем все НЕчисловые значения из строки
     for i in range(0, len(numbs)):                  # перемножаем
-        stroka += chairs[i] * int(numbs[i])
-    print(stroka)
+        result_str += chairs[i] * int(numbs[i])
+    print(result_str)
 
 with open('3_4_1_output.txt', 'w') as outputData:   # открываем файл на запись
-    outputData.write(stroka)                        # записываем результат в файл
+    outputData.write(result_str)                        # записываем результат в файл
     # файл закрыт
