@@ -4,5 +4,4 @@
 # Sample Output:    62.83185307179586
 
 import math
-R = float(input())
-print(2*math.pi*R)
+print(2*math.pi*float(input()))
