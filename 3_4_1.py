@@ -28,6 +28,6 @@ with open('dataset_3363_2.txt', 'r') as inputData:  # открываем фай�
         result_str += chairs[i] * int(numbs[i])
     print(result_str)
 
-with open('3_4_1_output.txt', 'w') as outputData:   # открываем файл на запись
+with open('dataset_3363_2_output.txt', 'w') as outputData:   # открываем файл на запись
     outputData.write(result_str)                    # записываем результат в файл
     # файл закрыт
