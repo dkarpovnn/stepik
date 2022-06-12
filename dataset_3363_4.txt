@@ -151,4 +151,3 @@ Day;57;43;84
 Gilson;52;30;81
 Blare;40;92;100
 Nelson;57;88;24
-Croftoon;87;82;74
